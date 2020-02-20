@@ -1,6 +1,4 @@
 class Actor < ActiveRecord::Base
-  
-  class Actor < ActiveRecord::Base
   has_many :characters
   has_many :shows, through: :characters
 
@@ -13,6 +11,4 @@ class Actor < ActiveRecord::Base
       "#{character.name} - #{character.show.name}"
     end
   end
-end
-  
 end
